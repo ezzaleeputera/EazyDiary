@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/floral_bg">
+
+    <TextView
+        android:id="@+id/titleLogMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#A3FFFFFF"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:text="EZ DIary"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="160dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTintMode="screen"
+        android:contentDescription="logo"
+        android:rotation="-12"
+        android:rotationX="15"
+        android:rotationY="28"
+        android:src="@drawable/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLogMasuk" />
+
+    <EditText
+    android:id="@+id/emel_LogMasuk"
+    android:layout_width="318dp"
+    android:layout_height="45dp"
+    android:layout_marginTop="328dp"
+    android:autofillHints="email"
+    android:ems="10"
+    android:hint="email"
+    android:inputType="textEmailAddress"
+    android:textColorHint="#DD302323"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/kataLaluan_LogMasuk"
+    android:layout_width="323dp"
+    android:layout_height="43dp"
+    android:layout_marginTop="36dp"
+    android:autofillHints="password"
+    android:ems="10"
+    android:hint="password"
+    android:inputType="textPassword"
+    android:textColorHint="#D5291919"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/emel_LogMasuk" />
+
+<Button
+    android:id="@+id/btn_LogMasuk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginStart="48dp"
+    android:layout_marginEnd="48dp"
+    android:background="@color/black"
+    android:text="submit"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/kataLaluan_LogMasuk"
+    app:layout_constraintVertical_bias="0.831" />
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="66dp"
+    android:layout_height="67dp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/btn_LogMasuk"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/kataLaluan_LogMasuk"
+    app:layout_constraintVertical_bias="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

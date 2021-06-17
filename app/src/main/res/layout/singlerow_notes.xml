@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#00FFFFFF"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp">
+
+        <TextView
+            android:id="@+id/textView_mbDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:paddingStart="20sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="20sp"
+            android:shadowColor="#121111"
+            android:shadowRadius="5"
+            android:text="maklum balas tajuk"
+            android:textAllCaps="false"
+            android:textColor="#CD7C838A"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_mbTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_mbDate"
+            android:paddingStart="20sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="20sp"
+            android:shadowColor="#121111"
+            android:shadowRadius="5"
+            android:text="maklum balas tajuk"
+            android:textAllCaps="true"
+            android:textColor="#0F3A60"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_mbDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_mbTitle"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:shadowColor="#121111"
+            android:shadowRadius="5"
+            android:text="maklum balas desc"
+            android:textAlignment="viewStart"
+            android:textColor="#136771"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/editiconMB"
+            android:layout_width="79dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView_mbDesc"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_edit"
+            android:contentDescription="button_Delete"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+        <ImageButton
+            android:id="@+id/deleteiconMB"
+            android:layout_width="79dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView_mbDesc"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_delete"
+            android:contentDescription="button_Delete"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
